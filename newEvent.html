@@ -1,0 +1,49 @@
+<HTML>
+<TITLE> Survive the Ride - Event Registration
+</TITLE>
+<BODY BGCOLOR="white" TEXT = "black">
+
+<center>
+<br> <br>
+<IMG src ="newlogo.jpg", ALIGN = middle> <br><br><br>
+
+<script type ="text/javascript" src="checkRequired.js"></script>
+
+<form name="new" action="addevent.php" onsubmit = "return checkRequired()" method = "post">
+
+<br>Please enter your trip information: <br>
+<table width = 300>
+<tr><td>Your Email:</td> <td> <input type="text" name="Email" /> </td></tr>
+<tr><td>Event Name:</td> <td> <input type="text" name="eName" /> </td></tr>
+<tr><td>Origin:</td> <td> <input type="text" name="Origin" /> </td></tr>
+<tr><td>Destination: </td> <td> <input type="text" name="Destination" /> </td> </tr>
+<tr><td>Departure Date:</td> <td> <input type="date" name="dDate" /> </td></tr>
+<tr><td>Departure Time: </td> <td> <input type="time" name="dTime" /> </td> </tr>
+</table>
+
+<br>Do you have a car: <br>
+<table width = 100>
+<tr><td> <input type="radio" name="Hascar" value="Yes" />  </td> <td>Yes </td></tr>
+<tr><td> <input type="radio" name="Hascar" value="No" /> </td> <td> No </td></tr>
+</table>
+<br>If you have a car, how many seats can you offer: <br>
+<table width = 100>
+<tr><td> <input type="number" name="Seats" />  </td> </tr>
+</table>
+
+<br><input type="submit" value="Submit">  <br>
+<br> <a href="login.php"> Return to Homepage </a> <br>
+</form>
+<br>
+
+<br><br><br>
+<hr>
+ &copy Jackey Liu, Raghav Gandotra
+<br>
+
+<font size = 1> Sharing rides, less congestion  </font>
+
+</center>
+
+</BODY>
+</HTML>
