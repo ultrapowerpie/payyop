@@ -1,6 +1,6 @@
 <?php
 	include ("connectDb.php");
-	$query = "SELECT * FROM `products` WHERE `category` = 'concerts' ";
+	$query = "SELECT * FROM `products` WHERE `category` = 'outdoor' ";
 	$res = mysql_query($query);
 
 	echo "<!DOCTYPE html>";
@@ -8,7 +8,7 @@
 	echo "<html>";
 		echo "<head>";
 			echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>';
-			echo "<title>paYYop- Concerts</title>";
+			echo "<title>paYYop- Outdoor</title>";
 			echo '<link rel="stylesheet" href="css/style.css" type="text/css" />';
 			echo "<!--[if IE 6]>";
 				echo '<link rel="stylesheet" href="css/ie6.css" type="text/css" />';
@@ -40,10 +40,10 @@
 						echo '<ul>';
 							echo '<li><a href="index.html">Home</a></li>';
 							echo '<!-- <li><a href="new_arrival.html">New Arrivals</a></li> -->;';
-							echo '<li class="selected"><a href="concerts.php">Concerts</a></li>';
+							echo '<li><a href="concerts.php">Concerts</a></li>';
 							echo '<li><a href="health.php">Health and Fitness</a></li>';
 							echo '<li><a href="sports.php">Sports</a></li>';
-							echo '<li><a href="outdoor.php">Outdoor Adventure</a></li>';
+							echo '<li class="selected"><a href="outdoor.php">Outdoor Adventure</a></li>';
 							echo '<li><a href="media.php">Media</a></li>';
 						echo '</ul>';
 					echo '</div>';
@@ -53,15 +53,11 @@
 						<div class="first">
 							<h2><a href="#">Categories</a></h2>
 							<ul>
-								<li><a href="#">Blues</a></li>
-								<li><a href="#">Classical</a></li>
-								<li><a href="#">Country</a></li>
-								<li><a href="#">Electronic</a></li>
-								<li><a href="#">Hip Hop</a></li>
-								<li><a href="#">Jazz</a></li>
-								<li><a href="#">Pop</a></li>
-								<li><a href="#">R&B</a></li>
-								<li><a href="#">Rock</a></li>
+								<li><a href="#">Amusement Park</a></li>
+								<li><a href="#">Canoeing</a></li>
+								<li><a href="#">Cruise</a></li>
+								<li><a href="#">Hiking</a></li>
+								<li><a href="#">Skiing</a></li>
 							</ul>
 						</div>
 						<div>
@@ -73,7 +69,7 @@
 					</div>';
 				echo '<div class="content">' ;
 					echo '<div class="figure">';
-						echo '<img src="images/concertsbig.png" alt=""/>';
+						echo '<img src="images/outdoorbig.png" alt=""/>';
 					echo "</div>";
 					echo '<div class="products">';
 						echo '<div class="paging">';
