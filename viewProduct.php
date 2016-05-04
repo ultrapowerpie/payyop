@@ -1,0 +1,99 @@
+<?php
+
+	echo "<!DOCTYPE html>";
+	echo "<!-- Website template by freewebsitetemplates.com -->";
+	echo "<html>";
+		echo "<head>";
+			echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>';
+			echo "<title>paYYop- Concerts</title>";
+			echo '<link rel="stylesheet" href="css/style.css" type="text/css" />';
+			echo "<!--[if IE 6]>";
+				echo '<link rel="stylesheet" href="css/ie6.css" type="text/css" />';
+			echo "<![endif]-->";
+			echo "<!--[if IE 7]>";
+				echo '<link rel="stylesheet" href="css/ie7.css" type="text/css" />';
+			echo "<![endif]-->";
+		echo "</head>";
+		echo '<body>';
+			echo '<div class="header">';
+				echo "<div>";
+					echo '<a href="index.html" id="logo"><img src="images/logo.gif" alt="logo"/></a>';
+					echo '<div class="navigation">';
+						echo '<ul class="first">';
+							echo  '<li class="first"><a href="jewelry.html">ON SALE</a></li>';
+							echo '<li><a href="accessories.html">BEST SELLERS</a></li>';
+						echo '</ul>';
+						echo '<ul>';
+							echo '<li><a href="about.html">About us</a></li>';
+							echo '<li><a href="#">Login</a></li>';
+						echo "</ul>";
+					echo "</div>";
+						echo '<form action="" class="search">';
+							echo '<input type="text" value="search" onblur="this.value=!this.value?\'search\':this.value;" onfocus="this.select()" onclick="this.value=\'\';"/>';
+							echo '<input type="submit" id="submit" value=""/>';
+						echo '</form>';
+					echo '</div>';
+					echo '<div id="navigation">';
+						echo '<ul>';
+							echo '<li><a href="index.html">Home</a></li>';
+							echo '<!-- <li><a href="new_arrival.html">New Arrivals</a></li> -->;';
+							echo '<li class="selected"><a href="concerts.php">Concerts</a></li>';
+							echo '<li><a href="health.html">Health and Fitness</a></li>';
+							echo '<li><a href="sports.html">Sports</a></li>';
+							echo '<li><a href="outdoor.html">Outdoor Adventure</a></li>';
+							echo '<li><a href="media.html">Media</a></li>';
+						echo '</ul>';
+					echo '</div>';
+				echo '</div>';
+			echo '<div class="body">';
+					echo '<div class="sidebar">
+						<div class="first">
+							<h2><a href="#">Categories</a></h2>
+							<ul>
+								<li><a href="#">Blues</a></li>
+								<li><a href="#">Classical</a></li>
+								<li><a href="#">Country</a></li>
+								<li><a href="#">Electronic</a></li>
+								<li><a href="#">Hip Hop</a></li>
+								<li><a href="#">Jazz</a></li>
+								<li><a href="#">Pop</a></li>
+								<li><a href="#">R&B</a></li>
+								<li><a href="#">Rock</a></li>
+							</ul>
+						</div>
+						<div>
+							<h2><a href="#">Recommended</a></h2>
+						</div>
+						<div>
+							<h2><a href="#">Popular</a></h2>
+						</div>
+					</div>';
+					echo '<div class="content">
+						<div class="featured">
+							<img src="images/edsheeran.png" alt=""/>
+							<div class="first">
+							<h3>Ed Sheeran US Tour</h3>
+							<p>Ed Sheeran Live at Newark Prudential Center From May 10-11th</p>
+							<p> '.$GET["eventname"].'</p>
+							</div>
+						</div>
+					</div>';
+				echo '<div class="article">';
+					echo '<div class="first">';
+						echo "<h3>Welcome to paYYop!</h3>";
+						echo "<p>This is a site where you can paYYop - pay your own price!</p>";
+					echo "</div>";
+					echo '<div class="connect">';
+						echo "<h2>Follow us</h2>";
+						echo '<a href="http://facebook.com/freewebsitetemplates" id="facebook">Facebook</a>';
+						echo '<a href="http://twitter.com/fwtemplates" id="twitter">Twitter</a>';
+						echo '<a href="#" id="comments">Comments</a>';
+						echo '<a href="http://www.flickr.com/freewebsitetemplates/" id="flickr">Flickr</a>';
+					echo "</div>";
+				echo "</div>";
+			echo "</div>";
+			echo '<div class="footer">';
+				echo "<p>&#169; 2016 paYYop. All Rights Reserved.</p>";
+			echo '</div>';
+		echo "</body>";
+	echo "</html>";
