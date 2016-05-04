@@ -18,5 +18,5 @@
 	     $rowUser = mysql_fetch_array($result);
 	     $passdB = $rowUser["pass"];    //find password
       }
-      mysql_close($conn);
+
 ?>

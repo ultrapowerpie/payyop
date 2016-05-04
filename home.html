@@ -6,22 +6,89 @@
 	<title>paYYop</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
+<style>
+	body {
+		background-image: url("images/night.png");
+	}
+</style>
+
 
 <body>
-	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<div class="box">
-		<a class="button" href="#popup1">Let me Pop up</a>
+		<a class="button1" href="#popup1">Login</a>
+		<a class="button2" href="#popup2">Register</a>
+		<br>
+		<br>
+		<br>
+	<br>
+		<a class="button2" href="index.html">Explore the site</a>
 	</div>
 	<div id="popup1" class="overlay">
 		<div class="popup">
-			<h2>Here i am</h2>
+			<h2>Please enter your login information</h2>
 			<a class="close" href="#">&times;</a>
 			<div class="content">
-				Thank to pop me out of that button, but now i'm done so you can close this window.
+				<form action="login.php" method="post">
+					<label for="username">Username</label>
+					<input type="text" name="username">
+
+					<label for="pass">Password</label>
+					<input type="password" name="pass">
+
+					<input type="submit" value="Sign In">
+				</form>
 			</div>
 		</div>
 	</div>
-	
+	<div id="popup2" class="overlay">
+		<div class="popup">
+			<h2>Create your account</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<form action="addUser.php" method="post">
+					<label for="username">Username</label>
+					<input type="text" name="username">
+
+					<label for="pass">Password</label>
+					<input type="password" name="pass">
+					
+					<label for="email">Email</label>
+					<input type="text" name="email">
+
+					<input type="submit" value="Register">
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<div class="footer">
 		<p>&#169; 2016 paYYop. All Rights Reserved.</p>
 	</div>

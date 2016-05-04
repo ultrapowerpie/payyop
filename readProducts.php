@@ -3,7 +3,7 @@
       include ("connectDb.php");
 
       // Here is another way of making an SQL query.
-      $sqlt = "SELECT * FROM products WHERE name = '$name'";
+      $sqlt = "SELECT * FROM products WHERE name = '$productName'";
 
       // Again, Send the request
       $product = mysql_query($sqlt);
@@ -16,5 +16,5 @@
 	     $foundProduct = number_format(mysql_num_rows($product));
 	     $rowProduct = mysql_fetch_array($product);
       }
-      mysql_close($conn);
+
 ?>
