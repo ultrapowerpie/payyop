@@ -1,21 +1,14 @@
-<html>
-<head>
-<title>Event Registration</title>
-</head>
-<body>
+
 
 <?php
+include ("header.php");
+
       //get variables
-      $username = $_POST["username"];
-      $pass = $_POST["pass"];
-      $vendor = $_POST["vendor"];
-      $name = $_POST["name"];
-      $time = $_POST["time"];
-      $lat = $_POST["lat"];
-      $lng = $_POST["lng"];
-      $category = $_POST["category"];
-      $price = $_POST["price"];
-      $quant = $_POST["quant"];
+      $username = $_SESSION["username"];
+      $pass = $_SESSION["pass"];
+      $name = $_GET["eventname"];
+      $price = $_GET["price"];
+      $quant = 1;
 
       include ("readPurchases.php");
 
@@ -41,23 +34,18 @@
       }
 
       //add event now
-      if ($foundUser == 0) {
+      if (empty($username)) {
+
             echo "<center>User not found, please register or login. Redirecting you to Registration. <br>";
-            echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=newMember.html">';
+            echo '<META HTTP-EQUIV="REFRESH" CONTENT="3; URL=login.php">';
       }
-      else if ($foundEvent == 0) {
+      else {
             echo "Adding Purchase " . $name;
             include ("connectDb.php");
             $sql = "INSERT INTO purchases (id, productname, username, quantity, price) VALUES ('$username . $name', $name','$username', '$quant', '$price')";
             success(mysql_query($sql), $username, $pass);
       }
-      else {
-            echo "Updating Event " . $event . " from " . $origin . " to " . $destination . " on " . $ddate;
-            include ("connectDb.php");
-            $sql = "DELETE FROM purchases WHERE id = '$username . $name'";
-      	mysql_query($sql);
-            $sql = "INSERT INTO purchases (id, productname, username, quantity, price) VALUES ('$username . $name', $name','$username', '$quant', '$price')";
-            success(mysql_query($sql), $username, $pass);
 
+include ("footer.php");
  ?>
 
