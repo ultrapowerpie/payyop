@@ -1,118 +1,37 @@
-<!DOCTYPE html>
-<html>
+<?php
+include ("header.php");
+?>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>paYYop</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-</head>
-
-<body>
-	<div class="header">
-		<div>
-			<a href="index.html" id="logo"><img src="images/logo.gif" alt="logo" /></a>
-			<div class="navigation">
-				<ul class="first">
-					<li class="first"><a href="nearby.html">Nearby Events</a></li>
-					<li><a href="about.html">About us</a></li>
-				</ul>
-				<ul>
-					<li><a href="#popup2">Register</a></li>
-					<li><a href="#popup1">Login</a></li>
-				</ul>
-			</div>
-			<form action="" class="search">
-				<input type="text" value="search" onblur="this.value=!this.value?'search':this.value;" onfocus="this.select()" onclick="this.value='';"/>
-				<input type="submit" id="submit" value="" />
-			</form>
-		</div>
-		<div id="navigation">
-			<ul>
-				<li class="selected"><a href="index.html">Home</a></li>
-				<li><a href="concerts.html">Concerts</a></li>
-				<li><a href="health.html">Health and Fitness</a></li>
-				<li><a href="sports.html">Sports</a></li>
-				<li><a href="outdoor.html">Outdoor Adventure</a></li>
-				<li><a href="media.html">Media</a></li>
+<div class="body">
+	<div class="featured">
+		<a href="nearby.html"><img src="images/advertisement.jpg" alt="" /></a>
+		<div class="gallery">
+			<a href="nearby.html"><img src="images/banner.png" alt="" /></a>
+			<ul class="first">
+				<li>
+					<a href="sports.html"><img src="images/sports.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="health.html"><img src="images/health.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="concerts.html"><img src="images/concerts.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="outdoor.html"><img src="images/outdoor.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="media.html"><img src="images/media.png" alt="" /></a>
+				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="body">
-		<div class="featured">
-			<a href="nearby.html"><img src="images/advertisement.jpg" alt="" /></a>
-			<div class="gallery">
-				<a href="nearby.html"><img src="images/banner.png" alt="" /></a>
-				<ul class="first">
-					<li>
-						<a href="sports.html"><img src="images/sports.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="health.html"><img src="images/health.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="concerts.html"><img src="images/concerts.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="outdoor.html"><img src="images/outdoor.png" alt="" /></a>
-					</li>
-					<li>
-						<a href="media.html"><img src="images/media.png" alt="" /></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="article">
-			<div class="first">
-				<h3>Welcome to paYYop!</h3>
-				<p>This is a site where you can paYYop - pay your own price!</p>
-			</div>
-			<div class="connect">
-				<h2>Follow us</h2>
-				<a href="http://facebook.com/" id="facebook">Facebook</a>
-				<a href="http://twitter.com/" id="twitter">Twitter</a>
-			</div>
-		</div>
-	</div>
-	<div id="popup1" class="overlay">
-		<div class="popup">
-			<h2>Please enter your login information</h2>
-			<a class="close" href="#">&times;</a>
-			<div class="content">
-				<form action="login.php" method="post">
-					<label for="username">Username</label>
-					<input type="text" name="username">
+</div>
 
-					<label for="pass">Password</label>
-					<input type="password" name="pass">
+<?php
+include ("header.php");
+?>
 
-					<input type="submit" value="Sign In">
-				</form>
-			</div>
-		</div>
-	</div>
-	<div id="popup2" class="overlay">
-		<div class="popup">
-			<h2>Create your account</h2>
-			<a class="close" href="#">&times;</a>
-			<div class="content">
-				<form action="addUser.php" method="post">
-					<label for="username">Username</label>
-					<input type="text" name="username">
-
-					<label for="pass">Password</label>
-					<input type="password" name="pass">
-					
-					<label for="email">Email</label>
-					<input type="text" name="email">
-
-					<input type="submit" value="Register">
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<p>&#169; 2016 paYYop. All Rights Reserved.</p>
-	</div>
 </body>
 
 </html>

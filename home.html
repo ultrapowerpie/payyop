@@ -38,14 +38,17 @@
 		<br>
 		<br>
 	<br>
-		<a class="button2" href="index.html">Explore the site</a>
+		<a class="button2" href="index.php">Explore the site</a>
 	</div>
 	<div id="popup1" class="overlay">
 		<div class="popup">
 			<h2>Please enter your login information</h2>
 			<a class="close" href="#">&times;</a>
 			<div class="content">
-				<form action="login.php" method="post">
+
+			<script type ="text/javascript" src="checkLogin.js"></script>
+
+				<form name="login" action="login.php" onsubmit = "return checkLogin()" method="post">
 					<label for="username">Username</label>
 					<input type="text" name="username">
 
@@ -62,7 +65,10 @@
 			<h2>Create your account</h2>
 			<a class="close" href="#">&times;</a>
 			<div class="content">
-				<form action="addUser.php" method="post">
+
+			<script type ="text/javascript" onsubmit = "return checkRegister()" src="checkRegister.js"></script>
+
+				<form name="register" action="addUser.php" method="post">
 					<label for="username">Username</label>
 					<input type="text" name="username">
 
